@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Admin</title>
+    </head>
+    <body>
+        <button onclick="SendStart()">Start</button>
+        <button onclick="SendEnd()">End</button>
+        <button onclick="SendPause()">Pause</button>
+        <button onclick="SendBegin()">Begin</button>
+        <button onclick="SendPrev()">Prev</button>
+        <button onclick="SendNext()">Next</button>
+
+            <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+            <script>
+                var socket = io();
+                socket.on('connection',function(message){
+                socket.emit('data_comm',socket.id);
+                 });
+                function SendStart(){
+                    var event = {"CMD":"START","PRES_ID":"efa0a79a-2f20-4e97-b0b7-71f824bfe349"};
+                    socket.emit('slidEvent',event);
+                }
+                function SendPause(){
+                    var event = {"CMD":"PAUSE","PRES_ID":""};
+                    socket.emit('slidEvent',event);
+                }
+                function SendBegin(){
+                    var event = {"CMD":"BEGIN","PRES_ID":""};
+                    socket.emit('slidEvent',event);
+                }
+                function SendNext(){
+                    var event = {"CMD":"NEXT","PRES_ID":""};
+                    socket.emit('slidEvent',event);
+                }
+                function SendPrev(){
+                    var event = {"CMD":"PREV","PRES_ID":""};
+                    socket.emit('slidEvent',event);
+                }
+                function SendEnd(){
+                    var event = {"CMD":"END","PRES_ID":""};
+                    socket.emit('slidEvent',event);
+                }  
+            </script>
+
+    </body>
+</html>

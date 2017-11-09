@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="WatcherAuthJ2E">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
+        <dependent-module archiveName="MiddleAuthWatcherEJBClient.jar" deploy-path="/lib" handle="module:/resource/MiddleAuthWatcherEJBClient/MiddleAuthWatcherEJBClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="FrontAuthWatcherWebService.war" deploy-path="/" handle="module:/resource/FrontAuthWatcherWebService/FrontAuthWatcherWebService">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MiddleAuthWatcherEJB.jar" deploy-path="/" handle="module:/resource/MiddleAuthWatcherEJB/MiddleAuthWatcherEJB">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="WatcherAuthProject.jar" deploy-path="/" handle="module:/resource/WatcherAuthProject/WatcherAuthProject">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

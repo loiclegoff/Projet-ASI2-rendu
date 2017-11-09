@@ -1,0 +1,6 @@
+{
+	
+	"port": 1337,
+	"contentDirectory" : "Home/Desktop/tp/uploads",
+	"presentationDirectory" : "Home/Desktop/tp/presentation_content"
+}

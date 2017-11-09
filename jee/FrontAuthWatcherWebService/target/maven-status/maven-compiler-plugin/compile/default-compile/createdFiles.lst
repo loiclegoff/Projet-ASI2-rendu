@@ -1,0 +1,5 @@
+fr/cpe/rest/IWatcherAuth.class
+fr/cpe/rest/impl/WatcherAuth.class
+fr/cpe/rest/impl/HelloWord.class
+fr/cpe/rest/IHelloWord.class
+fr/cpe/rest/ApplicationRestInit.class

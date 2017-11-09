@@ -1,0 +1,4 @@
+ejb/MessageSenderLocal.class
+fr/cpe/model/UserModel.class
+ejb/MessageReceiverSyncLocal.class
+fr/cpe/services/IHelloWorldService.class

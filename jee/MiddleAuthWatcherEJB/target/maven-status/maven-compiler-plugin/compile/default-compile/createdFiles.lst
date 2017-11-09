@@ -1,0 +1,4 @@
+fr/cpe/services/impl/WatcherAuthService.class
+ejb/MessageSender.class
+fr/cpe/services/impl/HelloWorldService.class
+ejb/MessageReceiverSync.class
